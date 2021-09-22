@@ -1,0 +1,257 @@
+.rwdNavImg1 {
+  display: none;
+}
+
+nav {
+  background-color: #e99a24;
+  font-size: 24px;
+  text-align: center;
+}
+
+/*滑鼠滑入次選單*/
+
+.dropdown-menu li:hover .sub-menu {
+  visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/*主選單設定*/
+
+.nav-item {
+  margin-top: 50px;
+  margin-right: 28px;
+}
+
+/*第一個左側的item*/
+
+#nav-item-1 {
+  margin-left: 20px;
+}
+
+/*滑鼠移入次選單主選單保持變色*/
+
+.navbar-nav > .nav-item:hover > a {
+  background-color: rgb(62, 58, 57);
+  color: white;
+}
+
+/*子選單設定*/
+
+.dropdown-menu {
+  background-color: rgb(62, 58, 57);
+  margin-top: -2px;
+  box-shadow: none;
+  margin-left: -1px;
+}
+
+.dropdown-menu > a {
+  /*子選單的文字設定*/
+  color: white;
+  line-height: 40px;
+  font-family: "微軟正黑體";
+  font-size: 20px;
+}
+
+.dropdown-menu > a:hover {
+  background-color: rgb(35, 24, 21);
+  color: white;
+}
+
+/*子選單開啟時，主選單維持不變色*/
+
+li.dropdown.show a.nav-link {
+  background-color: rgb(62, 58, 57);
+  color: white !important;
+}
+
+nav > div > ul > .nav-item > .nav-link:hover {
+  background-color: rgb(62, 58, 57);
+  color: white !important;
+}
+
+/*LOGO設定*/
+
+nav > a > img {
+  width: 100%;
+}
+
+/*主選單中文字體設定*/
+
+nav > div > ul > li > a > .chinese {
+  font-family: 微軟正黑體;
+  font-weight: bolder;
+}
+
+/*主選單英文字體設定*/
+
+nav > div > ul > li > a > .navbar-2-line {
+  font-family: 微軟正黑體;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+/*footer設定*/
+.rwdBanner {
+  display: none;
+}
+
+footer > img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.rwdBannerPC > .bannerBox {
+  z-index: 999;
+  position: absolute;
+  margin-top: 110px;
+  font-family: 微軟正黑體;
+  margin-left: 260px;
+  margin-bottom: 40px;
+}
+
+footer > div > #time {
+  font-size: 10px;
+}
+
+footer > div > p {
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+footer > div > #belong {
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+/*iX*/
+@media only screen and (max-width: 1300px) {
+  body {
+    margin: 0 auto;
+  }
+  .nav-item {
+    width: 100%;
+  }
+  .rwdNavImg1 {
+    display: inherit;
+    width: 60%;
+  }
+  .rwdNavImg2 ,
+  .rwdBannerPC {
+    display: none;
+  }
+  /*navbar次選單字體設定*/
+  .dropdown-menu > a {
+    font-size: 20px;
+    text-align: center;
+  }
+  /*footer設定*/
+  .rwdBanner {
+    display: inherit;
+  }
+
+  footer > img {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  footer > .bannerBox {
+    z-index: 999;
+    position: absolute;
+    font-family: 微軟正黑體;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  footer > div > p {
+    font-size: 10px;
+  }
+  footer > div > #time {
+    font-size: 5px;
+  }
+
+  footer > div > p {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+
+  footer > div > #belong {
+    font-size: 10px;
+    margin-top: 20px;
+  }
+}
+
+/*i6/7/8  橫版*/
+@media only screen and (min-width: 660px) {
+  /*LOGO設定*/
+  nav > a > img {
+    width: 70%;
+    margin-left: 100px;
+  }
+  /*footer設定*/
+  .rwdBanner > .bannerBox {
+    margin-left: 190px;
+    margin-bottom: 60px;
+    margin-top: 80px;
+  }
+}
+
+/*i6/7/8+ 直式*/
+@media only screen and (min-width: 414px) {
+  footer > .bannerBox {
+    margin-top: 50px;
+    margin-left: 70px;
+
+  }
+}
+
+/*i6/7/8+ 橫版*/
+@media only screen and (min-width: 730px) {
+  /*LOGO設定*/
+  nav > a > img {
+    width: 70%;
+    margin-left: 100px;
+  }
+  /*footer設定*/
+  .rwdBanner > .bannerBox {
+    margin-left: 230px;
+    margin-bottom: 60px;
+    margin-top: 90px;   
+  }
+}
+
+/*iX 橫版*/
+@media only screen and (min-width: 800px) {
+  /*LOGO設定*/
+  nav > a > img {
+    width: 60%;
+    margin-left: 130px;
+  }
+  /*footer設定*/
+  .rwdBanner > .bannerBox {
+    margin-left: 270px;
+    margin-bottom: 60px;
+    margin-top: 100px;
+  }
+}
+
+/*ipad 直版、橫版*/
+@media only screen and (min-width: 1000px) {
+ 
+ /*LOGO設定*/
+ nav > a > img {
+  width: 70%;
+ margin-left: 100px;
+}
+
+  /*footer設定*/
+  .rwdBanner > .bannerBox {
+    margin-left: 370px;
+    margin-bottom: 60px;
+    margin-top: 130px;
+  }
+}

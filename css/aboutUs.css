@@ -1,0 +1,72 @@
+p {
+  margin-top: 52px;
+  font-size: 20px;
+}
+
+.box {
+  margin-top: 66px;
+  height: 507px;
+}
+
+/*字體設定*/
+
+.box > .row > .col-xl-6 > span {
+  /*中文標題字體*/
+  font-size: 80px;
+  letter-spacing: 5px;
+  font-family: 微軟正黑體;
+  font-weight: bolder;
+}
+.box > .row > .col-xl-6 > h2 {
+  /*英文副標題字體*/
+  font-family: 微軟正黑體;
+  margin-top: -10px;
+  font-weight: bolder;
+}
+.box > .row > .col-xl-6 > p {
+  width: 95%;
+  font-family: 微軟正黑體;
+}
+
+.rwdImgText {
+  display: none;
+}
+/*左方大圖設定*/
+.rwdLImg{
+    width: 250px;
+    margin-left: 36px;
+    margin-right: 50px;
+}
+@media only screen and (max-width: 1025px) {
+  .rwdLImg,
+  .col-xl-9 {
+    display: none;
+  }
+  .rwdImgText {
+    display: inherit;
+  }
+  .rwdImgText > img {
+    width: 90%;
+    margin: 20px;
+  }
+  .rwdImgText > div > span {
+    font-size: 50px;
+    margin: 20px;
+    font-family: 微軟正黑體;
+    font-weight: bolder;
+  }
+  .rwdImgText > div > h2 {
+    font-size: 30px;
+    margin: 20px;
+    margin-top: -10px;
+    font-weight: bolder;
+    font-family: 微軟正黑體;
+  }
+  .rwdImgText > div > p {
+    margin: 20px;
+    font-family: 微軟正黑體;
+  }
+  .rwdImgText > div > img {
+    margin: 20px;
+  }
+}

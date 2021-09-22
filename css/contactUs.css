@@ -1,0 +1,62 @@
+div > h2 {
+  text-align: left;
+  font-family: 微軟正黑體;
+  margin-top: 80px;
+  font-weight: bolder;
+}
+
+div > h4 {
+  font-family: 微軟正黑體;
+  text-align: left;
+}
+div>div>div>h4{
+  font-weight: bold;
+}
+
+div > .row {
+  margin-left: 400px;
+  margin-top: 95px;
+}
+
+div > .row > div {
+  margin-right: 90px;
+  margin-left: -40px;
+}
+
+div > .row > div > div > h4 {
+  font-family: 微軟正黑體;
+  margin-left: 50px;
+}
+
+.rwdIcon {
+  display: none;
+}
+
+.realIcon > div > div {
+  margin-top: 10px;
+}
+@media only screen and (max-width: 865px) {
+  div > .row {
+    margin: 0 auto;
+    margin-top: 95px;
+  }
+  .realIcon {
+    display: none;
+  }
+  .rwdIcon {
+    display: inherit;
+    margin-top: 50px;
+  }
+  .rwdIcon > .container {
+    margin-top: 15px;
+  }
+  .rwdIcon > .container > p {
+    margin-top: 50px;
+    font-family: 微軟正黑體;
+    font-weight: bolder;
+  }
+  .rwdIcon > .container > img{
+    margin-top: -10px;
+  }
+ 
+}

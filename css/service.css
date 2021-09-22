@@ -1,0 +1,39 @@
+.rwdText > p {
+  display: none;
+}
+
+.row > span > a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width: 1200px) {
+  .paperCup,
+  div > div > div > img,
+  div > div > div > span {
+    display: none;
+  }
+
+  .rwd1,
+  .rwd2 {
+    margin-top: -20px;
+    display: inherit;
+  }
+
+  .rwd2 {
+    white-space: nowrap;
+    font-family: 微軟正黑體;
+    background-color: blanchedalmond;
+    width: 100%;
+    text-align: center;
+  }
+
+  .rwdText > p {
+    display: inherit;
+  }
+
+  .rwdText > p > a{
+    text-decoration: none;
+    color: black;
+  }
+}

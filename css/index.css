@@ -1,0 +1,103 @@
+body {
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+
+/*輪播箭頭大小設定*/
+
+.center-vertical {
+    position: relative;
+    width: 50%;
+}
+
+
+/*開店好幫手設定*/
+
+.rwd2HelpPC {
+    width: 100%;
+    height: auto;
+}
+
+.rwd2HelpPhone,
+.mySlides {
+    display: none;
+}
+
+.w3-left,
+.w3-right,
+.w3-badge {
+    cursor: pointer;
+}
+
+.w3-badge {
+    height: 13px;
+    width: 13px;
+    padding: 0;
+}
+
+.w3-display-container {
+    margin: 0 auto;
+}
+
+
+/*熱門商品設定(底層圖-1,商品圖1,文字2)*/
+
+.img_background {
+    position: absolute;
+    z-index: -1;
+    margin-top: 25px;
+}
+
+.img_1 {
+    position: absolute;
+    z-index: 1;
+    margin-top: 120px;
+}
+
+.img_2 {
+    position: absolute;
+    z-index: 3;
+}
+
+.img_text {
+    margin-top: 510px;
+    color: white;
+    font-family: indexChinese;
+}
+
+.rwdProductCell {
+    display: none;
+}
+
+
+/*iX*/
+
+@media only screen and (max-width: 1200px) {
+    .rwd2HelpPC {
+        display: none;
+    }
+    .rwd2HelpPhone {
+        display: inherit;
+        width: 100%;
+        margin-top: 100px;
+    }
+    .rwdProduct,
+    .img_background {
+        display: none;
+    }
+    .rwdL>img {
+        width: 20px;
+        margin-bottom: -30px;
+    }
+    .rwdR>img {
+        width: 20px;
+        margin-bottom: -30px;
+    }
+    .rwdProductCell {
+        display: inherit;
+    }
+   
+}

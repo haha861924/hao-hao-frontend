@@ -1,0 +1,198 @@
+.serviceImg {
+  z-index: 1;
+  position: absolute;
+  height: 685px;
+  width: 100%;
+}
+
+.serviceImg2 {
+  z-index: 2;
+  float: right;
+  position: absolute;
+  margin: 610px 0px 0 800px;
+}
+.one > img {
+  margin-left: 40px;
+  margin-top: 118px;
+}
+/*輪播*/
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/*輪播圓點往下拉*/
+.swiper-container {
+  overflow: unset;
+}
+div > .swiper-pagination-bullets {
+  margin-bottom: -40px;
+}
+/*圖片設定*/
+
+div > .row {
+  margin: 118px 10px 20px 20px;
+  text-align: left;
+}
+
+.rwdImg,
+#carouselExampleControls {
+  display: none;
+}
+
+/*文字設定*/
+
+div > .row > .col-xl-4 > div > span {
+  font-size: 60px;
+  font-family: 微軟正黑體;
+  font-weight: bolder;
+  margin-left: 30px;
+}
+
+div > .row > .col-xl-4 > div > h2 {
+  /*英文副標題字體*/
+  font-family: 微軟正黑體;
+  font-weight: bolder;
+  margin-top: -10px;
+  margin-left: 30px;
+}
+
+div > .row > .col-xl-4 > div > h4 {
+  font-family: 微軟正黑體;
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .swiper-container,
+  div > .row > .col-xl-8 {
+    display: none;
+  }
+
+  .one > img {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  /*輪播*/
+  div > .row > #carouselExampleControls {
+    display: inherit;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 300px;
+  }
+  /*圖片設定*/
+  div > img {
+    margin-bottom: -20px;
+  }
+  .rwdImg {
+    display: inherit;
+    margin-top: -50px;
+  }
+  .rwdImg1 {
+    height: 300px;
+    width: 90%;
+    z-index: -1;
+    position: absolute;
+  }
+  .rwdImg2 {
+    position: absolute;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    margin-left: 290px;
+    margin-top: 250px;
+  }
+  /*文字設定*/
+  div > .row > .col-xl-4 {
+    margin-top: 50px;
+  }
+  div > .row > .col-xl-4 > div > span {
+    font-size: 50px;
+    margin: 10px;
+    font-family: 微軟正黑體;
+    font-weight: bolder;
+  }
+  div > .row > .col-xl-4 > div > h2 {
+    font-size: 30px;
+    margin: 10px;
+    margin-top: -10px;
+  }
+  div > .row > .col-xl-4 > div > h4 {
+    margin: 10px;
+    font-family: 微軟正黑體;
+  }
+}
+
+/*i6/7/8 直式*/
+@media only screen and (max-width: 380px) {
+  .rwdImg2 {
+    margin-left: 290px;
+  }
+}
+
+/*i6/7/8+ 直式*/
+@media only screen and (min-width: 414px) {
+  .rwdImg2 {
+    margin-left: 320px;
+  }
+}
+
+/*i6/7/8  橫版*/ 
+@media only screen and (min-width: 660px) {
+  .rwdImg2 {
+    margin-left: 540px;
+  }
+}
+
+/*i6/7/8+ 橫版*/
+@media only screen and (min-width: 730px) {
+  .rwdImg2 {
+    margin-left: 600px;
+  }
+}
+
+/*i6/7/8+ 橫版*/
+@media only screen and (min-width: 810px) {
+  .rwdImg2 {
+    margin-left: 670px;
+  }
+}
+
+/*ipad 橫版*/
+@media only screen and (min-width: 768px) {
+  .rwdImg1{
+    margin-left: 20px;
+  }
+  .rwdImg2 {
+    margin-left: 640px;
+  }
+}
+/*ipad 橫版*/
+@media only screen and (min-width: 1000px) {
+  .rwdImg2 {
+    margin-left: 880px;
+    margin-top: 250px;
+  }
+  .rwdImg1{
+    margin-left: 30px;
+  }
+}
